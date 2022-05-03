@@ -34,6 +34,13 @@
         div>a{
             color: green;
         }
+        /* 同層相鄰選擇器(使用+符號)、同層全體選擇器(使用~符號) */
+        /* ul+p{
+            celor:red;
+        } */
+        ul~p{
+            color: yellow;
+        }
     </style>
 </head>
 <body>
@@ -71,5 +78,23 @@
                     <a href="#">a</a>
             <div>     
     <hr>
+    <h2>同層相鄰選擇器(使用+符號)、同層全體選擇器(使用~符號)
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <p>tt1</p>
+        <p>tt2</p>
+        <p>tt3</p>
+        <ul>
+           <li>1</li>
+           <li>2</li>
+           <li>3</li>
+        </ul>
+        <p>tt1</p>
+        <p>tt2</p>
+        <p>tt3</p>
+    </hr>
 </body>
 </html>
